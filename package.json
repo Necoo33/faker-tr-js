@@ -1,0 +1,23 @@
+{
+  "name": "faker-tr",
+  "version": "1.0.0",
+  "description": "Liblary for generating fake data in turkish.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fake",
+    "fake-data",
+    "fake-data-generator",
+    "fake-content",
+    "fake-content-generator",
+    "sahte",
+    "sahte-veri",
+    "sahte-veri-olusturucu",
+    "sahte-icerik",
+    "sahte-icerik-olusturucu"
+  ],
+  "author": "Necdet Arda Etiman",
+  "license": "MIT"
+}

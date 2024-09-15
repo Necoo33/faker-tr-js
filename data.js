@@ -1,0 +1,210 @@
+// halk isimleri
+
+let folkNames = [
+    { gender: 1, name: "cemal", origin: "ar" }, { gender: 1, name: "kemal", origin: "ar" }, { gender: 1, name: "selim", origin: "ar" }, 
+    { gender: 1, name: "halil", origin: "ar" }, { gender: 1, name: "bekir", origin: "ar" }, { gender: 1, name: "tolga", origin: "tr" },
+    { gender: 0, name: "gül", origin: "per" }, { gender: 0, name: "güllü", origin: "per" }, { gender: 1, name: "mehmet", origin: "tr" },
+    { gender: 1, name: "ahmet", origin: "ar" }, { gender: 1, name: "hasan", origin: "ar" }, { gender: 1, name: "hüseyin", origin: "ar" },
+    { gender: 0, name: "ayşe", origin: "ar" }, { gender: 0, name: "zeynep", origin: "ar" }, { gender: 0, name: "fatma", origin: "ar" },
+    { gender: 0, name: "merve", origin: "ar" }, { gender: 0, name: "dilara", origin: "per" }, { gender: 0, name: "dicle", origin: "ar" },
+    { gender: 1, name: "salih", origin: "ar" }, { gender: 0, name: "saliha", origin: "ar" }, { gender: 1, name: "metin", origin: "ar" },
+    { gender: 1, name: "besim", origin: "ar" }, { gender: 1, name: "seyit", origin: "ar" }, { gender: 1, name: "ünal", origin: "tr" }, 
+    { gender: 1, name: "ünsal", origin: "tr" }, { gender: 1, name: "erdoğan", origin: "tr" }, { gender: 1, name: "erkan", origin: "ar" }, 
+    { gender: 1, name: "ercan", origin: "tr" }, { gender: 1, name: "cengiz", origin: "mon" }, { gender: 1, name: "timur", origin: "uz"},
+    { gender: 0, name: "lale", origin: "per" }, { gender: 1, name: "abuzer", origin: "tr" }, { gender: 1, name: "semih", origin: "tr" },
+    { gender: 1, name: "önder", origin: "tr" }, { gender: 1, name: "ömer", origin: "ar" }, { gender: 1, name: "hidayet", origin: "ar" },
+    { gender: 0, name: "emel", origin: "ar" }, { gender: 1, name: "halim", origin: "ar" }, { gender: 0, name: "halime", origin: "ar" },
+    { gender: 1, name: "müslüm", origin: "ar" }, { gender: 0, name: "müslime", origin: "ar" }, { gender: 1, name: "iskender", origin: "ar" },
+    { gender: 1, name: "abdullah", origin: "ar" }, { gender: 1, name: "abdusselam", origin: "ar" }, { gender: 1, name: "abdurrahman", origin: "ar" },
+    { gender: 1, name: "abdurrahim", origin: "ar" }, { gender: 1, name: "mahmut", origin: "ar" }, { gender: 1, name: "nuh", origin: "ar" },
+    { gender: 1, name: "burak", origin: "tr" }, { gender: 1, name: "hamit", origin: "ar" }, { gender: 1, name: "abdulhamit", origin: "ar" },
+    { gender: 1, name: "şerif", origin: "ar" }, { gender: 0, name: "cemile", origin: "ar" }, { gender: 0, name: "şerife", origin: "ar" },
+    { gender: 1, name: "mert", origin: "per" }, { gender: 1, name: "murat", origin: "ar" }, { gender: 1, name: "serkan", origin: "per" },
+    { gender: 0, name: "ece", origin: "tr" }, { gender: 0, name: "pelin", origin: "per" }, { gender: 0, name: "perihan", origin: "per" },
+    { gender: 1, name: "ismail", origin: "ar" }, { gender: 1, name: "ishak", origin: "ar" }, { gender: 1, name: "isa", origin: "ar" },
+    { gender: 1, name: "musa", origin: "ar" }, { gender: 1, name: "adem", origin: "ar" }, { gender: 0, name: "havva", origin: "ar" },
+    { gender: 0, name: "dilan", origin: "per" }, { gender: 0, name: "dilek", origin: "tr" }, { gender: 0, name: "sevim", origin: "tr" },
+    { gender: 0, name: "aynur", origin: "tr" }, { gender: 1, name: "ayhan", origin: "tr" }, { gender: 1, name: "veli", origin: "ar" },
+    { gender: 1, name: "esat", origin: "ar" }, { gender: 0, name: "irem", origin: "tr" }, { gender: 1, name: "emre", origin: "tr" },
+    { gender: 1, name: "anıl", origin: "tr" }, { gender: 0, name: "şeyma", origin: "ar" }, { gender: 0, name: "sema", origin: "ar" },
+    { gender: 0, name: "esma", origin: "ar" }, { gender: 0, name: "şevval", origin: "ar" }, { gender: 0, name: "hacer", origin: "ar" },
+    { gender: 1, name: "alp", origin: "tr" }, { gender: 1, name: "alper", origin: "tr" }, { gender: 1, name: "alperen", origin: "tr" },
+    { gender: 1, name: "mustafa", origin: "ar" }, { gender: 1, name: "ali", origin: "ar" }, { gender: 1, name: "abidin", origin: "ar" },
+    { gender: 1, name: "serdar", origin: "per" }, { gender: 1, name: "aziz", origin: "ar" }, { gender: 1, name: "serhat", origin: "per" },
+    { gender: 1, name: "hamza", origin: "ar" }, { gender: 0, name: "seher", origin: "ar" }, { gender: 1, name: "yakup", origin: "ar" },
+    { gender: 1, name: "ibrahim", origin: "ar" }, { gender: 1, name: "fethi", origin: "ar" }, { gender: 1, name: "fethullah", origin: "ar" },
+    { gender: 1, name: "kamil", origin: "ar" }, { gender: 1, name: "kerim", origin: "ar" }, { gender: 1, name: "kerem", origin: "ar" },
+    { gender: 1, name: "ilker", origin: "tr" }, { gender: 1, name: "soner", origin: "tr" }, { gender: 0, name: "neşe", origin: "per" },
+    { gender: 1, name: "necati", origin: "ar" }, { gender: 1, name: "necmettin", origin: "ar" }, { gender: 1, name: "fatih", origin: "ar" },
+    { gender: 1, name: "can", origin: "per" }, { gender: 0, name: "canan", origin: "per" }, { gender: 1, name: "turgut", origin: "tr" },
+    { gender: 1, name: "ulaş", origin: "tr" }, { gender: 1, name: "tuna", origin: "tr" }, { gender: 0, name: "melike", origin: "ar" },
+    { gender: 1, name: "malik", origin: "ar" }, { gender: 1, name: "taner", origin: "tr" }, { gender: 1, name: "caner", origin: "tr" },
+    { gender: 1, name: "abdulkerim", origin: "ar" }, { gender: 1, name: "abdulkadir", origin: "ar" }, { gender: 1, name: "abdulaziz", origin: "ar" },
+    { gender: 1, name: "kadir", origin: "ar" }, { gender: 1, name: "kazım", origin: "ar" }, { gender: 1, name: "kenan", origin: "ar" },
+    { gender: 1, name: "muhsin", origin: "ar" }, { gender: 1, name: "engin", origin: "per" }, { gender: 1, name: "eren", origin: "tr" },
+    { gender: 0, name: "gökçe", origin: "tr" }, { gender: 1, name: "abdulcabbar", origin: "ar" }, { gender: 1, name: "alparslan", origin: "tr" },
+    { gender: 1, name: "alpaslan", origin: "tr" }, { gender: 1, name: "sabit", origin: "ar" }, { gender: 0, name: "melek", origin: "ar" },
+    { gender: 1, name: "erol", origin: "tr" }, { gender: 1, name: "zafer", origin: "ar" }, { gender: 1, name: "süleyman", origin: "ar" },
+    { gender: 1, name: "davut", origin: "ar" }, { gender: 1, name: "nevzat", origin: "per" }, { gender: 0, name: "ipek", origin: "tr" },
+    { gender: 0, name: "gaye", origin: "ar" }, { gender: 1, name: "hakan", origin: "tr" }, { gender: 0, name: "mine", origin: "per" },
+    { gender: 0, name: "inci", origin: "ch" }, { gender: 0, name: "eylül", origin: "ar" }, { gender: 1, name: "özgür", origin: "tr" },
+    { gender: 0, name: "berrak", origin: "tr" }, { gender: 0, name: "beyza", origin: "ar" }, { gender: 0, name: "eslem", origin: "ar" },
+    { gender: 0, name: "nur", origin: "ar" }, { gender: 1, name: "osman", origin: "ar" }, { gender: 1, name: "ozan", origin: "tr" },
+    { gender: 1, name: "recep", origin: "ar" }, { gender: 1, name: "tayyip", origin: "ar" }, { gender: 0, name: "suna", origin: "ar" },
+    { gender: 1, name: "bayram", origin: "tr" },
+];
+
+// marjinal isimler
+
+let marginalNames = [
+    { gender: 1, name: "alptuğ", origin: "tr" }, { gender: 1, name: "bertuğ", origin: "tr" }, { gender: 1, name: "berke", origin: "ar" },
+    { gender: 0, name: "azra", origin: "ar" }, { gender: 0, name: "melisa", origin: "fr" }, { gender: 0, name: "ayça", origin: "tr" },
+    { gender: 1, name: "huzeyfe", origin: "ar" }, { gender: 0, name: "hayrunnisa", origin: "ar" }, { gender: 1, name: "zeyn", origin: "tr" },
+    { gender: 0, name: "asena", origin: "tr" }, { gender: 0, name: "rümeysa", origin: "ar" }, { gender: 1, name: "arda", origin: "tr" },
+    { gender: 1, name: "ersan", origin: "tr" }, { gender: 1, name: "eray", origin: "tr" }, { gender: 1, name: "kaan", origin: "tr" },
+    { gender: 1, name: "abdulmetin", origin: "ar" }, { gender: 1, name: "abdulhakim", origin: "ar" }, { gender: 0, name: "cazibe", origin: "ar" },
+    { gender: 0, name: "serenay", origin: "ar" }, { gender: 0, name: "pakize", origin: "per" }, { gender: 1, name: "aras", origin: "tr" },
+    { gender: 1, name: "eymen", origin: "ar" }, { gender: 1, name: "necdet", origin: "ar" }, { gender: 0, name: "jale", origin: "tr" },
+    { gender: 0, name: "zülal", origin: "ar" }, { gender: 0, name: "sare", origin: "ar" }, { gender: 1, name: "orhun", origin: "tr" },
+    { gender: 1, name: "orkun", origin: "tr" }, { gender: 1, name: "zeynelabidin", origin: "ar" }, { gender: 0, name: "aleyna", origin: "ar" },
+    { gender: 1, name: "dursun", origin: "tr" }, { gender: 1, name: "fettah", origin: "ar" }, { gender: 1, name: "göktuğ", origin: "tr" },
+    { gender: 0, name: "ışıl", origin: "tr" }, { gender: 0, name: "esin", origin: "tr" }, { gender: 1, name: "abdulfettah", origin: "ar" },
+    { gender: 1, name: "uras", origin: "tr" }, { gender: 0, name: "deren", origin: "ar" }, { gender: 1, name: "cavit", origin: "per" },
+    { gender: 1, name: "cevat", origin: "ar" }, { gender: 0, name: "almıla", origin: "tr" }, { gender: 0, name: "göksel", origin: "tr" },
+    { gender: 0, name: "hüda", origin: "ar" }, { gender: 1, name: "münip", origin: "ar" }, { gender: 0, name: "ikra", origin: "ar" },
+    { gender: 1, name: "olgun", origin: "tr" }, { gender: 0, name: "berra", origin: "ar" }, { gender: 1, name: "ogün", origin: "tr" },
+];
+
+// unisex isimler:
+
+let unisexNames = [
+    { name: "deniz", origin: "tr" }, { name: "derya", origin: "tr" }, { name: "ismet", origin: "ar" },
+    { name: "yüksel", origin: "tr" }, { name: "olcay", origin: "tr" }, { name: "ömür", origin: "ar" },
+    { name: "ilkay", origin: "tr" }, { name: "ege", origin: "gr" }, { name: "evren", origin: "tr" },
+    { name: "ekin", origin: "tr" },
+];
+
+// soyisimler:
+
+let surnames = [
+    "kaya", "kayalı", "kayacı", "demir", "demirci", "serin", "derin", "maral", "ipteş", "boyacı", "pehlivan", "çiftçi",
+    "yazıcı", "kanar", "yanar", "söner", "şimşek", "kömürcü", "alemdar", "baş", "öz", "kaş", "kaplan", "aslan", "arslan", 
+    "aydın", "deli", "yanal", "önal", "yılmaz", "ünal", "önder", "ertuğrul", "erdoğan", "erkan", "ünsal", "kut", "alsancak", 
+    "ovalı", "kutlu", "yınal", "saran", "karan", "sarı", "yeşil", "kara", "kaşıkçı", "saraç", "sabancı", "saban", "acar", 
+    "ülgen", "filiz", "yıldırım", "solmaz", "kahraman", "çalışkan", "öztürk", "özügüzel", "ünlü", "aksoy", "aksay", "altın",
+    "altun", "ceylan", "ceyhan", "ulusoy", "soylu", "taş", "koca", "çakmak", "balcı", "bal", "şahin", "kartal", "yüzer",
+    "gezer", "coşkun", "coşar", "kaçar", "göçer", "seven", "karahan", "kayahan", "semerci"
+];
+
+// Hem dükkan ismi hem de paragraflarda kullanılabilecek rastgele kelimeler:
+
+let goodBuzzwords = [
+    "karınca", "kedi", "kemer", "şişe", "semt", "selvi", "doruk", "hesap", "defter", "bant", "kalem", "çakmak", 
+    "kelebek", "masa", "saman", "harman", "ova", "köy", "yangın", "zemin", "zemheri", "telefon", "dağ", "seccade", "mermi",  
+    "çiçek", "gül", "adaptör", "atkı", "askılık", "asma", "çay", "ön", "arka", "çare", "sevgi", "dünya", "anahtar", "isimlik", 
+    "paspas", "boğa", "sergi", "kısmet", "kader", "nasip", "münasip", "şefkat", "şen", "karar", "tesbih", "sarma",
+    "serin", "derin", "deha", "gök", "karanfil", "mendil", "yalı", "bahçe", "kapı", "kar", "nazik", "güven", "güzel", "hüner",
+    "kangal", "dirayet", "düzgün", "demir", "denge", "keşif", "kömür", "köse", "menzil", "ince", "özen", "özel", "özgün", "özgür",
+    "parlak", "pekmez", "çelik", "rakam", "seri", "seçkin", "şöhret", "şirin", 
+];
+
+// sadece paragraflarda kullanılacak kelimeler:
+
+let usualBuzzwords = [
+    "anahtar", "paspas", "tesbih", "sarma", "kızamık", "silgi", "levye", "karın", "dudak", "sokak", "ayakkabı", "kapak", "dikkat",
+    "deri", "terlik", "körük", "sopa", "değnek", "sinek", "kaçak", "kırma", "vites", "bardak", "kulaklık", "çöp", "sedir", "dik",
+    "battaniye", "kazak", "kablo", "kumanda", "sağanak", "izan", "ikame", "gürültü", "diken", "süpürge", "çaydanlık", "bavul", 
+    "davul", "bağlama", "tarım", "domates", "açıklama", "karalama", "emzik", "emekleme", "peçete", "hiç", "hüküm", "fare" , 
+    "kaşık", "inleme", "idrak", "hıyar", "hazır", "klasör",  "işkolik", "işkembe", "keriz", "şekil", "kayak", "halı", "çevirmen", 
+    "gazete", "ip", "site", "çekiç", "tornavida", "delik", "imza", "ıslak", "göl", "gölet", "dere", "devir", "dürüm", "düzmece", 
+    "erik", "dal", "isim", "imbik", "gevrek", "nefis", "nezle", "esme", "gezme", "gergin", "irade", "gam", "keder", "gerek", 
+    "geçiş", "çökmek", "çekim", "gizlenmek", "gider", "akar", "kermes", "gür", "mizan", "gümrük", "heba", "hiza", "direk", 
+    "ihtar", "imkan",  "hem", "her", "zümre", "kitle", "hemen", "zaman", "hekim", "iğne", "mesken", "ırmak", "ustura", "damla", 
+    "ısmarlama", "hırka", "şişman", "serpme", "hizmet", "imtina", "öbür", "itici", "kemirme", "kekeme", "dirsek", "kışkırtma",
+    "kelek", "kesme", "durgun", "kaçma", "çeşme", "kepek", "kötek", "dayak", "keçi", "koyun","mangal", "küçük", "öznel",
+    "küskün", "kaçkın", "minare", "kimlik", "mimik", "kişilik", "meşakkat", "kinaye", "kira", "diş", "diz", "kısma", "hibe",
+    "kıkırdak", "dümen", "kapatma", "düşman", "tırpan", "duman", "keser", "öpücük", "keza", "merak", "kişi", "hane", "ifşa",
+    "ev", "meram", "mesele", "günlük", "keşkül", "gurme", "müze", "inme", "müşkül", "muhterem", "çökme", "orak", "mercan",
+    "incik", "müdür", "kanat", "güç", "kahkül", "kasım", "ocak", "nisan", "haziran", "temmuz", "ağustos", "eylül", "tereyağ",
+    "tezcanlı", "mekan", "tören", "mide", "maydanoz", "aralık", "şubat", "mart", "ekmek", "ekşi", "orta", "oyma", "merhamet",
+    "oba", "soba", "oda", "örgü", "kene", "özür", "içkin", "garip", "öcü", "ördek", "kenar", "örüntü", "öküz", "organ", "osuruk",
+    "urgan", "tamir", "orangutan", "şiir", "ozan", "şair", "ok", "perakende", "oruç", "namaz", "abdest", "otlak", "oğlak", "pencere",
+    "pense", "orman", "parça", "para", "pala", "çapak", "pergel", "çakıl", "pil", "pilav", "tekerlek", "pişmek", "çatlak", "panel",
+    "pörtlek", "çeşni", "peki", "pek", "ürün", "pis", "pişkin", "pırasa", "çeşit",  "pirana", "pekiştirme", "çengel", "prim", "çim",
+    "pişman", "rakım", "resim", "resmi", "referans", "reşit", "rükün", "sel", "saray", "köşk", "tarhana", "sıra", "sınıf", "sırma",
+    "şefkat", "sirk", "saat", "saf", "sakat", "sakar", "şifa", "sükunet", "teşkilat", "sen", "sazan", "şikayet", "şike", "yorgan",
+    "şal", "tokat", "şamar", "şan", "mazi", "şevk", "şerbet", "şeker", "serap", "ağaç", "meşrep", "şömine", "şirket", "tarak",
+    "tavır", "suluk", "temel", "tecelli", "sürat", "temkin", "terazi", "un", "teselli", "tedirgin", "uçak", "tebrik", "tüketim", 
+    "tüzük", "tükürük", "tüm", "takım", "etkinlik", "tesbit", "talim", "uzay", "ukala", "uşak", "yalnız", "uçuk", "ülke", "üfürme",
+    "üzgün", "vergi", "yazgı", "vazo", "vize", "evrak", "vakar", "vasiyet", "beden", "vücut", "yaka", "vaka", "yük", "yarık",
+    "yasak", "yasa", "ezgi", "yel", "yeter", "ecel", "yakın", "yaşam", "yaş", "yama", "bohça", "vana", "yalı", "utku", "yastık",
+    "yatak", "yaban", "vaziyet", "yüzük", "yukarı", "aşşağı", "yön", "için", "zevk", "zeka", "zamir", "yüce", "zargana", "zengin",
+    "çapkın", "zincir", "zırh", "zeval", "zan", "zor"
+];
+
+// cümleler:
+
+let sentences = [
+    "Bugün hava çok güzel.", "Kitap okumayı seviyorum.", "Kahvaltıda peynir ve zeytin yedim.",
+    "Arkadaşlarımla sinemaya gittik.", "Yeni bir dil öğrenmek istiyorum.", "Bu akşam ne yemek yapalım?",
+    "Spor yapmak sağlıklı bir alışkanlıktır.", "Oysa herkes öldürür sevdiğini.", "Tatilde denize girmeyi planlıyorum.",
+    "İş yerinde yoğun bir gün geçirdim.", "Müzik dinlemek beni rahatlatıyor.", "Sabah yürüyüşe çıktım.",
+    "Film izlemek keyifli bir aktivite.", "Yemek yapmayı öğreniyorum.", "Bahçede çiçekler açtı.", 
+    "Yeni bir hobi edinmek istiyorum.", "Bu hafta sonu pikniğe gideceğiz.", "Bisiklet sürmek çok eğlenceli.",
+    "Kedimle oyun oynamayı seviyorum.", "Akşam yemeğinde çorba içtik.", "Doğada vakit geçirmek huzur verici.",
+    "Sabah kahvemi içtim.", "Yeni bir film izledim.", "Yemek tarifleri deniyorum.", "Bahçede çalışmak çok keyifli.",
+    "Yeni bir spor denemek istiyorum.", "Bu hafta sonu dağ yürüyüşüne çıkacağız.", "Kitap yazmak istiyorum.",
+    "Köpeğimle parkta yürüyüş yaptım.", "Akşam yemeğinde makarna yaptım.", "Doğada kamp yapmayı seviyorum.",
+    "Eğer çok çalışırsan, başarı kaçınılmazdır.", "Sağlıklı beslenmek, uzun bir yaşamın anahtarıdır.",
+    "Düzenli egzersiz yapmak, stresi azaltır.", "Kitap okumak, zihni geliştirir.", "Erken yatmak, verimli bir gün geçirmenizi sağlar.",
+    "Doğru nefes almak, enerji seviyesini artırır.", "Pozitif düşünmek, mutluluğu artırır.", "Yeni şeyler öğrenmek, beyni aktif tutar.",
+    "Doğada vakit geçirmek, ruhu dinlendirir.", "İyi bir uyku, genel sağlığı iyileştirir.", "Günlük tutmak, düşünceleri netleştirir.",
+    "Allahı zikretmek, zihni sakinleştirir.", "Bol su içmek, vücudu sağlıklı tutar.", "Yeni hobiler edinmek, hayatı renklendirir.",
+    "Gülmek, bağışıklık sistemini güçlendirir.", "Planlı çalışmak, hedeflere ulaşmayı kolaylaştırır.",
+    "Sosyal ilişkiler, mutluluğu artırır.", "Doğru beslenme, enerjiyi artırır.", "Kendine zaman ayırmak, ruh sağlığını korur.",
+    "Yardımsever olmak, toplumu güçlendirir.", "Empati kurmak, ilişkileri güçlendirir.", "Dinlemek, iletişimin temelidir.",
+    "Saygı göstermek, karşılıklı güveni artırır.", "Dürüst olmak, sağlam ilişkiler kurar.", "Destekleyici olmak, arkadaşlıkları pekiştirir.",
+    "Anlayışlı olmak, çatışmaları azaltır.", "Güven vermek, ilişkilerin temelidir.", "Zaman ayırmak, bağları kuvvetlendirir.",
+    "Pozitif geri bildirim, motivasyonu artırır.", "Ortak ilgi alanları, ilişkileri derinleştirir.", "Sabır, başarının anahtarıdır.",
+    "Bilgi, güçtür.", "Zaman, en değerli hazinedir.", "Sevgi, her kapıyı açar.", "Düşünmeden konuşmak, nişan almadan ateş etmeye benzer.",
+    "Küçük adımlar, büyük yolculuklara çıkarır.", "Güven, ilişkilerin temelidir.", "Mutluluk, paylaştıkça çoğalır.",
+    "Başarı, hazırlıkla buluşan fırsattır.", "Hayat, cesur olanları ödüllendirir.", "Başarı, cesaretin ödülüdür.",
+    "Bilgelik, deneyimle kazanılır.", "Sevgi, en güçlü bağdır.", "Hayat, küçük anların toplamıdır.", "Sabır, en büyük erdemdir.",
+    "Bilgi, paylaştıkça artar.", "Güven, zamanla inşa edilir.", "Mutluluk, içten gelir.", "Başarı, azimle elde edilir.",
+    "Cesaret, korkunun üstesinden gelmektir.", "Başarı, sabırla gelir.", "Bilgi, en büyük hazinedir.", "Sevgi, her şeyi fetheder.",
+    "Hayat, anı yaşamaktır.", "Sabır, her kapıyı açar.", "Bir sevmek bin defa ölmek demekmiş.", "Sanma sen herkesi sadık yar olur.",
+    "Gözler kalbin aynasıdır.", "Aşk, her şeyi göze aldırır.", "Mutluluk, paylaştıkça çoğalır.", "Her şey seninle güzel.",
+    "Güzel günler göreceğiz.", "Aşk, bir sudur iç iç kudur.", "Gözler yalan söylemez.", "Sevgi anlaşmak değildir, nedensiz de sevilir.",
+    "Bazen küçük bir an için ömür bile verilir.", "Bir tatlı huzur almaya geldim kalamıştan.", "Karagümrük yanıyor, polis beni arıyor.",
+    "Aşka yürek gerek.", "Soran varsa, işte buyum: Can çıkmadan çıkmaz huyum.", "Ayrılsak ölürüz biz; bir bedende bütünüz biz.",
+    "Hayat, bir gündür o da bugündür.", "Hayat, sevince güzel.", "Bugün yeni bir tarif denedim.", "Sabah erken kalktım ve yürüyüş yaptım.",
+    "Arkadaşlarımla parkta buluştuk.", "Yeni bir kitap okumaya başladım.", "Kedimle oyun oynadım.", "Akşam yemeğinde salata yaptım.",
+    "Hafta sonu için planlar yaptım.", "Yeni bir dil öğrenmeye karar verdim.", "Bahçede çiçekler açtı.", "Film izlemek için sinemaya gittik.",
+    "Asıl çaresizlik derdin devasız olması değil. Birini iyi edecek şeyin, diğerinin kadehine zehir olmasıdır.", 
+    "Bazen hayat seni öyle zorlar ki, yolun başında kimdin unutursun.", "Bir kere aktı mı zamanın içinden suyun yolu değişmez.",
+    "Çaresizlik aradığı çarenin belki tam önünde olması ama onu bulacak vaktin olmamasıdır.", 
+    "Birini yenmenin en kolay yolu, onu birini yenerken seyretmekle öğrenilir.",
+    "Eğer birisi seni aldatmışsa bu onun suçudur. Eğer o kişi seni pek çok kere aldatmışsa bu senin suçundur.",
+    "En iyi soygunlar girerken değil çıkarken bozulur.", "Hesap görmek, hesap etmekten zordur.",
+    "Kadere inanan insan tesadüfe inanmaz. Tesadüfe inanan adamsa kaderini kendi elinde tutamaz.",
+    "Kırılmak istemiyorsan, kendini yere bırakmayacaksın.", "Portakalı soymadan içinin iyi olup olmadığını anlayamazsın.",
+    "Sadakat ya birine doğru koşmaktır ya birinden kaçmaktır.", "Her ihanet sevgiyle başlar.",
+    "Tanımadığından değil, yanlış tanıdığından korkacaksın.", "Çok isteyen değil, bedelini ödeyen alır.",
+    "Yer yerinden oynamadan hiçbir şey yerine oturmaz.", "Bizi biz yapan zaafımızdır.", "Ya tarih yazacağız ya da tarih olacağız.",
+    "Köstebek yer altında yaşamaz. Yakalanmamak için çukur kazar.", "Ben sana 'gülüm' demem, gülün ömrü az olur.",
+    "Aşk, ellisine kadar adamın gözünü karartır, ellisinden sonra hayatını.", "Düşmanın vurduğu kahraman olur, dostun vurduğu rezil olur.",
+    "Ahmağın çok olduğu yerde kurşunlar havada gezermiş.", "Kararları elinde kalem olanlar değil silah olanlar verir.",
+    "Tahtını kaybetmiş bir kral, şeytandan bile medet umar.", "Bilgiyi araştırırsanız, bilgi sizi bulur.",
+    "Aşk ile yürüyen, sırtında dünyayı taşır. Aşksız yürüyen, beden diye bir ceset taşır.",
+    "Fikirlerin kanatları vardır, kimse insanlara ulaşmasını engelleyemez.", "İlim ve sanat ittifak görmediği ülkeyi terk eder.",
+    "Bütün hastalıklar esasen yenilen ve içilen şeylerden ileri gelmektedir.", "Şehvet bir adamın gözünü bürümüşse en çirkini en güzel görür.",
+    "İnsanın kandırdığı en büyük budala kendisidir.", "Başlamak işin en önemli kısmıdır.", "Bilirken susmak, bilmezken söylemek kadar kötüdür.",
+    "İktidar, iktidara düşkün olmayan ve iktidardan gelecek yararlara ihtiyacı bulunmayanlara verilmelidir.",
+    "Kötülüklerin ilki ve en büyüğü, haksızlıkların cezasız kalmasıdır.", "Herkes aynı şeyleri konuşuyorsa, ya mesele çok önemlidir ya da konuşanlar çok önemsiz.",
+    "Sevmek için insan ararız hep, oysa ki insan olan sever.", "Kalpler yalnız Allah'ın zikriyle mutmain olur.",
+    "Seven sevdiğine koşar, korkan korktuğundan kaçar.", "Kelin merhemi olsa kafasına sürer."
+];
+
+module.exports = {
+    folkNames, marginalNames, unisexNames, surnames, goodBuzzwords, usualBuzzwords, sentences
+}
